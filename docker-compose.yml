@@ -1,0 +1,7 @@
+version: '2'
+services:
+  godot:
+    image: godot-server:latest
+    volumes:
+      - ./game.pck:/game.pck
+    command: --path .
